@@ -14,18 +14,19 @@ TWILIO_AUTH_TOKEN  = ENV['TWILIO_AUTH_TOKEN']
 @twilio = Twilio::REST::Client.new TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
 
 # Phone numbers
-my_number  = '+xxx'
-her_number = '+xxx'
+my_number  = ENV['MEU_CEL']
+her_number = ENV['CEL_AMOR']
 
 reason = [
-  'Working hard',
-  'Gotta ship this feature',
-  'Someone fucked the system again'
+  'Bicho pegando aqui...',
+  'Tenho que terminar um negócio aqui...',
+  'Alguém fez merda no sistema aqui de novo...',
+  'Bruno tá no meu pé pra entregar um trem aqui...'
 ].sample
 
 # Send a text message
 @twilio.messages.create(
-  from: my_number, to: her_number, body: "Late at work. #{reason}"
+  from: my_number, to: her_number, body: "Garrado no trampo. #{reason}"
 )
 
 # Log this
