@@ -19,9 +19,9 @@ her_number = ENV['CEL_AMOR']
 
 reason = [
   'Bicho pegando aqui...',
-  'Tenho que terminar um negócio aqui...',
+  'Tenho que terminar um negocio aqui...',
   'Alguém fez merda no sistema aqui de novo...',
-  'Bruno tá no meu pé pra entregar um trem aqui...'
+  'Bruno ta no meu pe pra entregar um trem aqui...'
 ].sample
 
 # Send a text message
